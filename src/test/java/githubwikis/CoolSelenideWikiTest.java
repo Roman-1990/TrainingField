@@ -20,9 +20,7 @@ public class CoolSelenideWikiTest {
         $("li.Box-row", 15).click();
         //Проверка, что внутри есть пример кода для JUnit5
         $$("code").get(2).shouldHave(text("com.codeborne.selenide.junit5.SoftAssertsExtension"));
-        sleep(5000);
 
     }
-
 
 }
