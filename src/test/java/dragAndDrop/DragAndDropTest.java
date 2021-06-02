@@ -1,4 +1,4 @@
-package dradanddrop;
+package dragAndDrop;
 
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebElement;
@@ -16,15 +16,6 @@ public class DragAndDropTest {
 
         $("#column-a").shouldHave(text("B"));
         $("#column-b").shouldHave(text("A"));
-        sleep(5000);
-
-    }
-    //нет понимания, как заполнять внутренности, элемент не переносится
-    @Test
-    void movingActionsTest() {
-        open("https://the-internet.herokuapp.com/drag_and_drop");
-
-        actions().moveToElement(element("#column-a")).clickAndHold(element("#column-a")).moveToElement(element("#column-b")).release().perform();
 
     }
 }
